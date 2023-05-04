@@ -1,0 +1,185 @@
+
+/* Global Style */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+/* Header Style */
+.btnLogin-popup {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    position: fixed;
+    min-width: 0;
+    top: 0;
+    left: 0;
+    width: 95%;
+    max-height: 1200px;
+    padding: 20px 40px; /* reduced padding to avoid overflow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: #ece4db;
+    
+}
+
+.logo {
+    width: 250px;
+    height: 70px;
+    margin-right: auto;
+
+}
+
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: maroon;
+    text-decoration: none;
+    font-weight: 50;
+    margin-left: 40px; /* reduced margin to avoid overflow */
+}
+
+/* underlines on header */
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+
+}
+
+/* hearder login button */
+.navigation .btnLogin-popup {
+    width: 110px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid lightgrey;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: maroon;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+
+}
+
+.navigation .btnLogin-popup:hover{
+    background: #fff;
+    color: #162938;
+
+}
+
+
+/* Style the table */
+
+h2 {
+    position: absolute;
+    top: 15%;
+    left: 10px;
+    color: maroon; 
+
+}
+
+
+.table_1 {
+    border:1px solid black;
+    border-collapse: collapse;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    font-style: normal;
+   
+  }
+
+  .table_2 {
+    border:1px solid black;
+    border-collapse: collapse;
+    position: absolute;
+    top: 30%;
+    left: 300px;
+    font-style: normal;
+   
+  }
+
+  .table_3 {
+    border:1px solid black;
+    border-collapse: collapse;
+    position: absolute;
+    top: 30%;
+    left: 590px;
+   
+  }
+  
+
+  .table_4 {
+    border:1px solid black;
+    border-collapse: collapse;
+    position: absolute;
+    top: 30%;
+    left: 880px;
+   
+  }
+  
+
+  .table_5 {
+    border:1px solid black;
+    border-collapse: collapse;
+    position: absolute;
+    top: 70%;
+    left: 10px;
+  }
+  
+  
+  /* Style the table header */
+  th {
+    border:1px solid black;
+    color: maroon;
+    text-align: center;
+    padding: 8px;
+    font-weight: normal;
+  }
+  
+  /* Style the table rows */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+
+
+.create {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+.activitycreate {
+    background-color: #ece4db;
+    color: maroon;
+    font-weight: bolder;
+    padding: 5%;
+}

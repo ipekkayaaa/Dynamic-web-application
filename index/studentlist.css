@@ -1,0 +1,148 @@
+
+/* Global Style */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+
+
+/* Header Style */
+.btnLogin-popup {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    position: fixed;
+    min-width: 0;
+    top: 0;
+    left: 0;
+    width: 95%;
+    max-height: 1200px;
+    padding: 20px 40px; /* reduced padding to avoid overflow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color:  #ece4db;
+    
+}
+
+.logo {
+    width: 250px;
+    height: 70px;
+    margin-right: auto;
+
+}
+
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: maroon;
+    text-decoration: none;
+    font-weight: 50;
+    margin-left: 40px; /* reduced margin to avoid overflow */
+}
+
+/* underlines on header */
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+
+}
+
+/* hearder login button */
+.navigation .btnLogin-popup {
+    width: 110px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid lightgrey;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: maroon;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+
+}
+
+.navigation .btnLogin-popup:hover{
+    background: #fff;
+    color: #162938;
+
+}
+
+/* Set default styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the page header */
+h1 {
+    position: absolute;
+    color: maroon;
+    top: 10%;
+    padding: 20px;
+}
+
+/* Style the table */
+table {
+    border-collapse: collapse;
+    border:1px solid black;
+    border-collapse: collapse;
+    position: absolute;
+    top: 30%;
+    
+}
+
+/* Style the table headings */
+th {
+    background-color: #0088cc;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style the table data cells */
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Style the student ID links */
+td a {
+    color: #0088cc;
+    text-decoration: none;
+}
+
+/* Style the hover effect on student ID links */
+td a:hover {
+    text-decoration: underline;
+}
